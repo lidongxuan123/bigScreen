@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bigScreen</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        div.div_out {
+            min-width: 1200px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .div_inner {
+            width: 33%;
+            height: 33%;
+            display: inline-block
+        }
+        .div_inner:nth-of-type(2n-1){
+            background: lightblue;
+        }
+        .div_inner:nth-of-type(2n-1){
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_out">
+        <div class="div_inner">1</div>
+        <div class="div_inner">2</div>
+        <div class="div_inner">3</div>
+        <div class="div_inner">4</div>
+        <div class="div_inner">5</div>
+        <div class="div_inner">6</div>
+        <div class="div_inner">7</div>
+        <div class="div_inner">8</div>
+        <div class="div_inner">9</div>
+    </div>
+</body>
+
+</html>
